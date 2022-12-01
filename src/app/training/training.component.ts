@@ -8,6 +8,8 @@ import { map } from 'rxjs/operators';
 })
 export class TrainingComponent implements OnInit {
 
+  onGoingTraining: boolean = false
+
   constructor() { }
 
   ngOnInit(): void {
