@@ -1,4 +1,3 @@
-
 import { NgModule } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -17,27 +16,29 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatCardModule } from '@angular/material/card';
 import { MatSelectModule } from '@angular/material/select';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
     imports: [MatButtonModule, MatIconModule, 
             MatFormFieldModule, MatIconModule,
-            FlexLayoutModule,    FormsModule,
+            FlexLayoutModule,   FormsModule,
             MatDatepickerModule, MatNativeDateModule,
-            MatCheckboxModule,     ReactiveFormsModule,
-            MatSidenavModule,     MatToolbarModule,
-            MatListModule,      MatTabsModule,
-            MatPaginatorModule,  MatCardModule,
-            MatSelectModule,    MatProgressSpinnerModule],
-    exports: [MatButtonModule, MatIconModule, 
-            MatFormFieldModule, MatInputModule,
-            FlexLayoutModule,    FormsModule,
-            MatDatepickerModule, MatNativeDateModule,
-            MatCheckboxModule,   ReactiveFormsModule,
+            MatCheckboxModule,  ReactiveFormsModule,
             MatSidenavModule,   MatToolbarModule,
             MatListModule,      MatTabsModule,
-            MatPaginatorModule,  MatCardModule,
-            MatSelectModule,    MatProgressSpinnerModule]
+            MatPaginatorModule, MatCardModule,
+            MatSelectModule,    MatProgressSpinnerModule,
+            MatDialogModule],
+    exports: [MatButtonModule, MatIconModule, 
+            MatFormFieldModule, MatInputModule,
+            FlexLayoutModule,   FormsModule,
+            MatDatepickerModule, MatNativeDateModule,
+            MatCheckboxModule,  ReactiveFormsModule,
+            MatSidenavModule,   MatToolbarModule,
+            MatListModule,      MatTabsModule,
+            MatPaginatorModule, MatCardModule,
+            MatSelectModule,    MatProgressSpinnerModule,
+            MatDialogModule]
 })
 
 export class MaterialModule {}
